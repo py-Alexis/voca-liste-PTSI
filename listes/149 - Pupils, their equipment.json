@@ -1,0 +1,358 @@
+{
+    "catégorie": "L'éducation, la politique, l'économie",
+    "tags": [],
+    "mode": "langue",
+    "liste": [
+        [
+            "a schoolboy",
+            "un écolier",
+            "",
+            2
+        ],
+        [
+            "a pupil / a student",
+            "un élève",
+            "",
+            5
+        ],
+        [
+            "a boarder",
+            "un interne",
+            "",
+            5
+        ],
+        [
+            "to be missing",
+            "être absent",
+            "",
+            5
+        ],
+        [
+            "a row",
+            "une rangée",
+            "",
+            5
+        ],
+        [
+            "to do an exercise",
+            "faire un exercice",
+            "",
+            3
+        ],
+        [
+            "to do sums",
+            "faire du calcul",
+            "",
+            5
+        ],
+        [
+            "a schoolbag",
+            "un cartable",
+            "",
+            5
+        ],
+        [
+            "a book",
+            "un livre",
+            "",
+            3
+        ],
+        [
+            "an exercise book",
+            "un cahier",
+            "",
+            3
+        ],
+        [
+            "a file",
+            "un classeur",
+            "",
+            3
+        ],
+        [
+            "a ballpointpen / a biro",
+            "un stylo à bille",
+            "",
+            5
+        ],
+        [
+            "a pencil",
+            "un crayon",
+            "",
+            5
+        ],
+        [
+            "a pencil-sharpener",
+            "un taille-crayon",
+            "",
+            5
+        ],
+        [
+            "a rubber / (US) an eraser",
+            "une gomme",
+            "",
+            5
+        ],
+        [
+            "a set square / a triangle",
+            "une équerre",
+            "",
+            5
+        ],
+        [
+            "a schoolgirl",
+            "une écolière",
+            "",
+            3
+        ],
+        [
+            "a day pupil",
+            "un(e) externe",
+            "",
+            5
+        ],
+        [
+            "an old boy / an old girl",
+            "un ancien élève / une ancienne élève",
+            "",
+            0
+        ],
+        [
+            "to eat at school",
+            "être demi-pensionnaire",
+            "",
+            5
+        ],
+        [
+            "to line up",
+            "se mettre en rang(s)",
+            "",
+            5
+        ],
+        [
+            "the teacher's pet",
+            "le chouchou du prof",
+            "",
+            5
+        ],
+        [
+            "to do a dictation",
+            "faire une dictée",
+            "",
+            5
+        ],
+        [
+            "to write an essay",
+            "faire un essai",
+            "",
+            3
+        ],
+        [
+            "to recite a poem",
+            "réciter une poésie",
+            "",
+            5
+        ],
+        [
+            "a satchel",
+            "un cartable à bretelles",
+            "",
+            2
+        ],
+        [
+            "a briefcase",
+            "un porte-document",
+            "",
+            3
+        ],
+        [
+            "a notebook",
+            "un carnet",
+            "",
+            3
+        ],
+        [
+            "a folder",
+            "une chemise",
+            "",
+            5
+        ],
+        [
+            "a felt-tip pen",
+            "un feutre",
+            "",
+            3
+        ],
+        [
+            "a highlighter",
+            "un surligneur",
+            "",
+            3
+        ],
+        [
+            "a pencil case",
+            "une trouse",
+            "",
+            5
+        ],
+        [
+            "a ruler",
+            "une règle",
+            "",
+            3
+        ],
+        [
+            "scissors",
+            "des ciseaux",
+            "",
+            3
+        ],
+        [
+            "Knowledge is power",
+            "Savoir, c'est pouvoir",
+            "",
+            5
+        ],
+        [
+            "to acquire knowledge",
+            "acquérir des connaissances",
+            "",
+            5
+        ],
+        [
+            "(UK) Year 1",
+            "le CP (UK)",
+            "",
+            5
+        ],
+        [
+            "(UK) Year 7",
+            "la sixième (UK)",
+            "",
+            5
+        ],
+        [
+            "(UK) Year 11",
+            "la seconde (UK)",
+            "",
+            4
+        ],
+        [
+            "(UK) Year 12 / Lower Sixth",
+            "la première (UK)",
+            "",
+            3
+        ],
+        [
+            "(UK)  Year 13 / Upper Sixth",
+            "la terminale (UK)",
+            "",
+            5
+        ],
+        [
+            "(US) the 1st grade",
+            "le CP (US)",
+            "",
+            3
+        ],
+        [
+            "(US) 6th grade",
+            "la sixième (US)",
+            "",
+            4
+        ],
+        [
+            "(US) 9th grade",
+            "la troisième (US)",
+            "",
+            3
+        ],
+        [
+            "(US) 11th grade",
+            "la première (US)",
+            "",
+            3
+        ],
+        [
+            "(US) 12th grade",
+            "la terminale (US)",
+            "",
+            3
+        ],
+        [
+            "a schoolmate / a classmate  / a school chum",
+            "un camarade classe",
+            "",
+            3
+        ],
+        [
+            "to go to school",
+            "aller à l'école",
+            "",
+            5
+        ],
+        [
+            "he was late for school this morning",
+            "il est arrivé en retard à l'école ce matin",
+            "",
+            3
+        ],
+        [
+            "he is not in school today",
+            "il n'est pas à l'école aujourd'hui",
+            "",
+            5
+        ],
+        [
+            "he is still at school",
+            "il va encore à l'école",
+            "",
+            2
+        ],
+        [
+            "he has left school",
+            "il ne va plus à l'école",
+            "",
+            2
+        ],
+        [
+            "he hates school dinners / he hates school lunches",
+            "il a horreur de manger à la cantine",
+            "",
+            0
+        ],
+        [
+            "to learn one's lessons by heart",
+            "apprendre ses leçons par coeur",
+            "",
+            2
+        ],
+        [
+            "to go over one's lesson",
+            "revoir sa leçon",
+            "",
+            3
+        ],
+        [
+            "to botch up a translation",
+            "massacrer une traduction",
+            "",
+            0
+        ],
+        [
+            "to take private lessons",
+            "prendre des cours particuliers",
+            "",
+            5
+        ],
+        [
+            "a school leaver",
+            "un élève qui a fini ses études secondaires",
+            "",
+            5
+        ]
+    ],
+    "historique": [],
+    "ready": true,
+    "online": true
+}
