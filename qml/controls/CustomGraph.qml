@@ -189,8 +189,8 @@ Item {
             id: popupHistory
 
             color: darker_color
-            height: 150
-            width: 165
+            height: datePopUp.height + modePopUp.height + directionPopUp.height + lvPopUp.height + nbMistakePopUp.height + timeSpendPopUp.height + 45
+            width: 180
             visible: false
             opacity: .93
             radius: 10
