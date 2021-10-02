@@ -50,9 +50,9 @@ Item {
             if(lvs[indexHover][3] === 0){
                 nbMistakePopUp.text = "aucune erreurs"
             }else if(lvs[indexHover][3] === 1){
-                nbMistakePopUp.text = `${lvs[indexHover][3]} erreur`
+                nbMistakePopUp.text = `${lvs[indexHover][3]}`
             }else{
-                nbMistakePopUp.text = `${lvs[indexHover][3]} erreurs`
+                nbMistakePopUp.text = `${lvs[indexHover][3]}`
             }
         }
 
