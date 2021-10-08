@@ -40,8 +40,11 @@ def download_file(file_id, file_name):
 
     print(f'the "{file_name}" file has finished downloading')
 
+
 def sync_with_drive():
     # this function download file that are on the drive and not on the computer
+
+    liste_of_sync_file = []
 
     # get the list of file in the drive folder
     drive_content = drive_service.files().list(q=f"'{FOLDER_ID}' in parents").execute()
@@ -56,6 +59,9 @@ def sync_with_drive():
     for file in drive_content["files"]:
         if file["name"] not in computer_content:
             download_file(file["id"], file["name"])
+            liste_of_sync_file.append(file["name"][:-5])
+
+    return liste_of_sync_file
 
 
 if __name__ == "__main__":

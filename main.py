@@ -18,9 +18,11 @@ from PySide2.QtQml import QQmlApplicationEngine
 # PTSI SYNC VERSION_________________________
 import api.google_drive_api.sync_api as sync
 try:
-    sync.sync_with_drive()
+    sync_liste = sync.sync_with_drive()
     print("sync finish")
+    print("sync files :", sync_liste)
 except:
+    sync_liste = []
     print("error")
 # __________________________________________
 
@@ -290,6 +292,16 @@ class MainWindow(QObject):
     @Slot(str)
     def del_file(self, liste_name):
         os.remove("listes/" + liste_name + ".json")
+
+    sendSyncFile = Signal(str, str)
+    def get_sync_file(self):
+        if len(sync_liste) != 0:
+            string = ""
+            for element in sync_liste:
+                string += f"{element} \n"
+            title = f"{len(sync_liste)} nouvelles listes:" if len(sync_liste) > 1 else "une nouvelle liste:"
+            print(title, string, sep="\n")
+            self.sendSyncFile.emit(title, string)
 
     # ------------FIN HOME PAGE------------
 
@@ -723,6 +735,7 @@ if __name__ == "__main__":
     main.get_custom_top_bar()
     main.get_stack_view_animation()
     main.get_list_list()
+    main.get_sync_file()
 
     if not engine.rootObjects():
         sys.exit(-1)

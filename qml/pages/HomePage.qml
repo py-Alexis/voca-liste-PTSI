@@ -481,12 +481,64 @@ Item {
             PropertyAnimation { id: hidePopUp; target: popUp; property: "opacity"; to: 0; duration: 500; easing.type: Easing.InOutQuint}
 
         }
+
+
+
+        Rectangle{
+            id: popUpSyncFile
+
+            radius: 7
+            anchors.right: parent.right
+            anchors.bottom: parent.bottom
+            anchors.bottomMargin: 20
+            anchors.rightMargin: -width
+            visible: false
+
+
+            color: medium_color
+            height: syncTitle.height + syncFileTextArea.height + 7
+            width: syncFileTextArea.width + 50
+
+
+            Label{
+                id: syncTitle
+                color: light_text_color
+                anchors.left: parent.left
+                anchors.top: parent.top
+                font.pointSize: 9
+                anchors.topMargin: 7
+                anchors.leftMargin: 10
+            }
+            Text{
+                id: syncFileTextArea
+                color: medium_text_color
+                anchors.left: parent.left
+                anchors.top: syncTitle.bottom
+                lineHeight: 1.2
+                font.pointSize: 8
+                anchors.topMargin: 10
+                anchors.leftMargin: 30
+            }
+
+            PropertyAnimation { id: wait1showPopUpSyncFile; target: popUpSyncFile; property: "anchors.rightMargin"; to: -popUpSyncFile.width; duration: 2000; easing.type: Easing.InOutQuint; onFinished: showPopUpSyncFile.running = true}
+            PropertyAnimation { id: showPopUpSyncFile; target: popUpSyncFile; property: "anchors.rightMargin"; to: 15; duration: 1000; easing.type: Easing.InOutQuint; onFinished: wait2PopUpSyncFile.running = true}
+            // not ideal but it's the only way I find to let the popUp a bit before it vanish
+            PropertyAnimation { id: wait2PopUpSyncFile; target: popUpSyncFile; property: "anchors.rightMargin"; to: 15; duration: 5000; easing.type: Easing.InOutQuint; onFinished: hidePopUpSyncFile.running = true}
+            PropertyAnimation { id: hidePopUpSyncFile; target: popUpSyncFile; property: "anchors.rightMargin"; to: -popUpSyncFile.width; duration: 750; easing.type: Easing.InOutQuint; onFinished: popUpSyncFile.visible = false}
+        }
     }
 
 
 
     Connections{
         target: backend
+
+        function onSendSyncFile(title, string){
+            syncTitle.text = title
+            syncFileTextArea.text = string
+            popUpSyncFile.visible = true
+            wait1showPopUpSyncFile.running = true
+        }
 
         // Custom Top Bar
         function onSendListList(listlist){
